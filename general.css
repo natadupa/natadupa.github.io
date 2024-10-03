@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+  background-color: rgb(186, 217, 245);
+}
+
+label {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px;
+  width: 10%;
+  margin-left: 25px;
+}
+
+input {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 30%;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pestania {
+  display: inline-block;
+  border: 2px solid;
+  border-bottom: 0px;
+  padding: 5px;
+  background-color: bisque;
+  margin-left: -5px;
+  width: 120px; /* 10% */
+  border-radius: 10px 10px 0 0;
+}
+.pestania:hover {
+  cursor: pointer;
+}
+
+#li_docente {
+  background-color: darkgray;
+}
+
+/*#contenedor {
+  position: relative;
+  border: 1px solid;
+  display: block;
+  height: 5em;
+}
+
+#sec_docente,
+#sec_estudiante {
+  position: absolute;
+  left: 0px;
+}
+
+#sec_publico {
+  position: absolute;
+  right: 0px;
+}*/
+
+#sec_docente, #sec_estudiante,#sec_publico {
+  padding: 15px;
+  display: block;
+  border: 2px solid black;
+  background-color: blanchedalmond;
+  margin-left: -5px;
+  width: 50%;
+}
+
+#sec_estudiante,
+#sec_publico {
+  padding: 15px;
+  width: 50%;
+  display: none;
+ text-align: center;
+}
+
+#rta_nota3,
+#rta_definitiva {
+  padding-left: 4%;
+}
+
+#btn_reg_notas_estudiante {
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  margin-top: 15px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: white;
+}
+
+th{
+  background-color: cornflowerblue;
+  color:black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#btn_busc_nom{
+  font-size: 16px;
+  padding: 4px 6px;
+  position: relative;
+  top:1px;
+}
+
+#txt_busq_nombre{
+  margin: 0;
+}
+

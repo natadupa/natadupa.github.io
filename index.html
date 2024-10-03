@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor y Consultor de Notas</title>
+    <link href="./librerias_frontend/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./librerias_frontend/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./librerias_frontend/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="general.css">
+    <script src="general.js"></script>
+    <script src="docente.js"></script>
+    <script src="estudiante.js"></script>
+    <script src="publico.js"></script>
+</head>
+<body>
+    <h1>Gestor y Consultor de Notas</h1>
+    <ul>
+        <li id="li_docente" class="pestania" ><i class="fa-solid fa-address-book" style="color: brown; font-size: 1.5em; margin-right: 2px;"></i> Docente</li>
+        <li id="li_estudiante" class="pestania" ><i class="fa-solid fa-graduation-cap" style="color: darkblue; font-size: 1.5em; margin-right: 2px;"></i>Estudiante</li>
+        <li id="li_publico" class="pestania" ><i class="fa-solid fa-user" style="color: coral; font-size: 1.5em; margin-right: 5px;"></i>Público</li>
+    </ul>
+    <div id="contenedor">
+        <section id="sec_docente">
+            <form>
+                <label for="cod">Codigo:</label>
+                <input type="text" id="cod" maxlength="7" required>
+                <label for="nomb">Nombre:</label>
+                <input type="text" id="nomb" required>
+                <label for="corr">correo:</label>
+                <input type="email" id="corr" required>
+                <label for="nota1">Nota 1:</label>
+                <input type="text" id="nota1" maxlength="4" required>
+                <label for="nota2">Nota 2:</label>
+                <input type="text" id="nota2" maxlength="4" required>
+                <br>
+                <label for="nota3">Nota 3:</label>
+                <input type="text" id="nota3" maxlength="4">
+                <button id="btn_add_nota3" type="button">Adicionar</button>
+                <p id="rta_nota3">Acumulado Nota 3: 0</p>
+                <p id="rta_definitiva">Definitiva: 0</p>
+                <div><button id="btn_reg_notas_estudiante" type="submit">Registrar Notas</button></div>
+            </form>
+        </section>
+
+        <section id="sec_estudiante">
+            <form></form>
+                <p id="p_codigo">Codigo :</p>
+                <input type="text" id="txt_codigo" maxlength="7" required>
+                <button id="btn_busc_cod" type="button">Buscar</button>
+                <p id="p_nomb">Nombre: </p>
+                <p id="not1">Nota 1: </p>
+                <p id="not2">Nota 2: </p>
+                <p id="not3">Nota 3: </p>
+                <p id="definitiva">Definitiva: </p>
+                <p id="estado">Estado: </p>
+
+            </form>
+        </section>
+
+        <section id="sec_publico">
+
+           <div>
+            <p id="p_nombre">Nombre :</p>
+            <input type="text" id="txt_busq_nombre" required>
+            <button id="btn_busc_nom" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+           </div>
+
+           <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Definitiva</th>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+                
+           </table>
+
+        </section>
+    </div>
+</body>
+</html>
+
+
